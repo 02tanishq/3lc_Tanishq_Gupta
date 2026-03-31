@@ -1,10 +1,12 @@
 **Chihuahua vs. Muffin: Data-Centric Image Classification**
 This repository contains a high-performance image classification pipeline for the Chihuahua vs. Muffin challenge. Unlike traditional model-centric approaches, this project focuses on Data-Centric AI—improving the quality and influence of the training data to achieve superior generalization on unseen test sets.
+
 🚀 **Performance Summary**
  * Model Architecture: ResNet-18 (Trained from scratch)
  * Best Training Accuracy: 99.6%
  * Best Validation Accuracy: 98.5%
  * Best Test Accuracy: 97.46%
+   
 🛠️ **Technical Approach**
 1. Data-Centric Optimization (via 3LC)
 The core of this project’s success was using the 3LC Dashboard to perform surgical data edits:
@@ -20,10 +22,12 @@ To prevent the ResNet-18 from memorizing specific pixel locations, a heavy augme
  * RandomResizedCrop: Forces the model to identify objects from small patches (e.g., a nose or crumb texture).
  * RandomErasing: Drops information to ensure the model finds multiple redundant features.
  * ColorJitter: Removes color-based shortcuts, forcing a focus on morphology and texture.
+   
 📁 **Repository Structure**
  * train.py: Main training script integrating the 3LC API and PyTorch.
  * best_model.pth: The highest-performing model checkpoint.
  * requirements.txt: Necessary libraries (torch, torchvision, tlc, etc.).
+   
 💻 **How to Run**
  * Install dependencies: pip install -r requirements.txt
  * Register the 3LC tables: python register_tables.py
