@@ -33,5 +33,4 @@ To prevent the ResNet-18 from memorizing specific pixel locations, a heavy augme
  * Register the 3LC tables: python register_tables.py
  * Launch the 3LC service to pick up data edits: 3lc service
  * Run training: python train.py
-Author: Tanishq
-Project: MNNIT AI Hackathon / Azeotropy Finalist
+
